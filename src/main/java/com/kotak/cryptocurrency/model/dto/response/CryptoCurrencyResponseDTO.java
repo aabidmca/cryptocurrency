@@ -30,7 +30,7 @@ public class CryptoCurrencyResponseDTO {
     			.id(cryptoEntity.getId())
     			.code(cryptoEntity.getCode())
     			.name(cryptoEntity.getName())
-    			.createdAt(cryptoEntity.getCreatedAt().toLocalDateTime())
+    			.createdAt(cryptoEntity.getCreatedAt() == null ? null : cryptoEntity.getCreatedAt().toLocalDateTime())
     			.updatedAt(cryptoEntity.getUpdatedAt() == null ? null : cryptoEntity.getUpdatedAt().toLocalDateTime())
     			.price("$" + cryptoEntity.getPrice())
     			.build();
