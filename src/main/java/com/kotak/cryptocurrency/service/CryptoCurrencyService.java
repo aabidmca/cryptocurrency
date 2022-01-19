@@ -1,7 +1,5 @@
 package com.kotak.cryptocurrency.service;
 
-import java.util.List;
-
 import org.springframework.data.domain.Pageable;
 
 import com.kotak.cryptocurrency.model.dto.request.CryptoCurrencyListingRequestDTO;
