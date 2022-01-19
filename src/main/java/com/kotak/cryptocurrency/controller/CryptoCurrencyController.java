@@ -39,7 +39,7 @@ public class CryptoCurrencyController {
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<?> getInfo(@PathVariable("id") Integer id) {
-		return new ResponseEntity<String>("Served", HttpStatus.OK);
+		return new ResponseEntity<CryptoCurrencyResponseDTO>(cryptoCurrencyService.find(id), HttpStatus.OK);
 	}
 	
 	@GetMapping("/list")
